@@ -1,0 +1,160 @@
+header {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #53085C;
+  position: fixed;
+  text-align: left;
+  padding-left: 15px;
+  font-size: 42px;
+  border: 0;
+  border-bottom: 1px;
+  border-style:solid;
+  border-color: #000;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.box {
+  display: block;
+  margin: 0px;
+  padding: 0px 8px;
+  float: left;
+  height: 60px;
+}
+
+.box a:hover {
+  background-color: #990099;
+  display: block;
+  height: 60px;
+}
+img {
+  padding-top: 15px;
+}
+nav {
+  padding-bottom: 15px;
+  padding-right: 50px;
+  float: right;
+  margin-right: 0;
+}
+section {
+  display: block;
+  min-height: 400px;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  background-color: #0F587B;
+  font-size: 22px;
+  float: left;
+  margin: 0;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
+p {
+  padding: 16px;
+  max-width: 80%;
+  text-overflow: ellipsis;
+  width: 1200px;
+  line-height: 1.4;
+  font-size: 20px;
+  text-align: justify;
+  font-family: verdana; sans-serif;
+}
+
+h2 {
+  text-align: center;
+}
+footer {
+  position: fixed;
+  height: 40px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 8px 16px;
+  background-color: #53085C;
+  font-size: 20px;
+  box-sizing: border-box;
+  border-bottom:1px;
+  border-style: solid;
+  border-color: #000;
+}
+
+a {
+  color: #000;
+}
+
+.blue {
+  background-color: #560F8c;
+}
+
+.mailto  {
+  position: absolute;
+  margin-top: 32px;
+  margin-left: 0;
+  padding-left: 20px;
+  text-align: left;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: auto;
+  border: 2px;
+  border-style: solid;
+  border-color: #000;
+  background-color: #0F587B;
+}
+
+#forms {
+  box-sizing: border-box;
+  background-color: #0F587B;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  padding: 16px;
+  width: 25%;
+  height: 25%;
+  border: 1px;
+  border-style: solid;
+  border-color: #000;
+}
+
+img {
+  border: 1px;
+  border-style: solid;
+  border-color: #000;
+}
+
+textarea {
+  width: 250px;
+  height: 200px;
+}
+
+.counter-box {
+  width: 300px;
+  height: 300px;
+  background-color: #727;
+  border: 1px;
+  border-style: solid;
+  border-color: #000;
+  padding: 8px;
+  margin: 20px;
+  float: left;
+}
+
+h4 {
+  padding: 0;
+  margin: 4px;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+h5 {
+  float: left;
+  margin-left: 4px;
+  margin-top: 6px;
+  text-align: justify;
+}
