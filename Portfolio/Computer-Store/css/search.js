@@ -1,8 +1,6 @@
-$(".searchbox").keypress(function(){
-  var search = $(".searchbox");
-  alert(search.val());
-  var a = "r.e.t.";
-  switch (a) {
+function search() {
+  var searchD = $("#searchbox").val().toLowerCase();
+  switch (searchD) {
     case "r":
     case "r.":
     case "r.e":
@@ -10,8 +8,8 @@ $(".searchbox").keypress(function(){
     case "r.e.t":
     case "r.e.t.":
       //Hide all non R.E.T. Robots
-      $("butler.bot").toggleClass("hidden");
-      $("megaMan").toggleClass("hidden");
+      $("#butler").addClass("hidden");
+      $("#megaMan").addClass("hidden");
       break;
     case "b":
     case "bu":
@@ -24,8 +22,8 @@ $(".searchbox").keypress(function(){
     case "butler.bo":
     case "butler.bot":
       //Hide all non Butler.Bot Robots
-      $("ret").toggleClass("hidden");
-      $("megaMan").toggleClass("hidden");
+      $("#ret").addClass("hidden");
+      $("#megaMan").addClass("hidden");
       break;
     case "m":
     case "me":
@@ -36,14 +34,21 @@ $(".searchbox").keypress(function(){
     case "mega ma":
     case "mega man":
       //Hide all non Mega Man Robots
-      $("butler.bot").toggleClass("hidden");
-      $("ret").toggleClass("hidden");
+      $("#butler").addClass("hidden");
+      $("#ret").addClass("hidden");
+      break;
+    case "":
+    case " ":
+      //add back in Robots
+      $("#butler").removeClass("hidden");
+      $("#ret").removeClass("hidden");
+      $("#megaMan").removeClass("hidden");
       break;
     default:
       //remove  all Robots
-      $("butler.bot").toggleClass("hidden");
-      $("ret").toggleClass("hidden");
-      $("megaMan").toggleClass("hidden");
+      $("#butler").addClass("hidden");
+      $("#ret").addClass("hidden");
+      $("#megaMan").addClass("hidden");
       break;
   }
-});
+};
