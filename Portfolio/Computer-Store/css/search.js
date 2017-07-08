@@ -8,6 +8,7 @@ function search() {
     case "r.e.t":
     case "r.e.t.":
       //Hide all non R.E.T. Robots
+      $("#ret").removeClass("hidden");
       $("#butler").addClass("hidden");
       $("#megaMan").addClass("hidden");
       break;
@@ -22,6 +23,7 @@ function search() {
     case "butler.bo":
     case "butler.bot":
       //Hide all non Butler.Bot Robots
+      $("#butler").removeClass("hidden");
       $("#ret").addClass("hidden");
       $("#megaMan").addClass("hidden");
       break;
@@ -34,6 +36,7 @@ function search() {
     case "mega ma":
     case "mega man":
       //Hide all non Mega Man Robots
+      $("#megaMan").removeClass("hidden");
       $("#butler").addClass("hidden");
       $("#ret").addClass("hidden");
       break;
